@@ -7,8 +7,9 @@
 
     <ListView
         android:id="@+id/listaDeReservas"
+        style="@android:style/Widget.DeviceDefault.Light.ExpandableListView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fabAdicionarReserva"

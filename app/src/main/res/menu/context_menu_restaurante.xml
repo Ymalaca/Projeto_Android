@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <item
+        android:id="@+id/LigarRestaurante"
+        android:title="Ligar Para Restaurante"
+        />
+
+    <item
+        android:id="@+id/ReservarRestaurante"
+        android:title="Editar Restaurante"
+        />
+
+    <item
+        android:id="@+id/VerReservas"
+        android:title="Ver Reservas"
+        />
+
+
 </menu>

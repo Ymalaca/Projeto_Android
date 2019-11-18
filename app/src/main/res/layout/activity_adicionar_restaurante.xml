@@ -1,6 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
+    <EditText
+        android:id="@+id/NomeRestaurante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome do Restaurante" />
+
+    <EditText
+        android:id="@+id/TelefoneRestaurante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Telefone do Restaurante"
+        />
+
+    <EditText
+        android:id="@+id/CepRestaurante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cep do Restaurante"
+        />
+
+    <EditText
+        android:id="@+id/RuaRestaurante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Rua do Restaurante"
+        />
+
+    <EditText
+        android:id="@+id/BairroRestaurante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Bairro do Restaurante"
+        />
+
+    <EditText
+        android:id="@+id/CidadeRestaurante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cidade do Restaurante"
+        />
+
+    <EditText
+        android:id="@+id/LocalizaçãoRestaurante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Localização do Restaurante"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar Restaurante"
+        />
 </LinearLayout>

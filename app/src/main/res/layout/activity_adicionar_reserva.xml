@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-</LinearLayout>
+    <EditText
+        android:id="@+id/NomeReservante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome do Reservante" />
+
+    <EditText
+        android:id="@+id/TelefoneReservante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Telefone do Reservante"
+        />
+
+    <EditText
+        android:id="@+id/CpfReservante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cpf do Reservante"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar Reserva"
+        />
+ </LinearLayout>

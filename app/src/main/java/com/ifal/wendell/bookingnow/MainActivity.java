@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
 
-        if (id == R.id.adicionarRestaurante) {
+        if (id == R.id.VerTotalReservas) {
             return true;
         }
 

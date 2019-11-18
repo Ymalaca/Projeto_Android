@@ -1,4 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <item
+        android:id="@+id/ExcluirReserva"
+        android:title="Excluir Reserva"
+   />
+    <item
+        android:id="@+id/LigarReservante"
+        android:title="Ligar Para Reservante"
+        />
+
+    <item
+        android:id="@+id/EditarReserva"
+        android:title="Editar Reserva"
+        />
+
 </menu>
