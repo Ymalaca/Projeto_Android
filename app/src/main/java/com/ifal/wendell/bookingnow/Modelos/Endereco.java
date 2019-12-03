@@ -5,12 +5,31 @@ public class Endereco {
     private String RuaRestaurante;
     private String BairroRestaurante;
     private String CidadeRestaurante;
+    private String UFRestaurante;
+    private int codigo;
 
-    public Endereco(String CepRestaurante, String RuaRestaurante, String BairroRestaurante, String CidadeRestaurante) {
+    public Endereco(int codigo, String CepRestaurante, String RuaRestaurante, String BairroRestaurante, String CidadeRestaurante, String UFRestaurante) {
         this.CepRestaurante = CepRestaurante;
         this.RuaRestaurante = RuaRestaurante;
         this.BairroRestaurante = BairroRestaurante;
         this.CidadeRestaurante = CidadeRestaurante;
+        this.UFRestaurante = UFRestaurante;
+    }
+
+    public int getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
+    }
+
+    public String getUFRestaurante() {
+        return UFRestaurante;
+    }
+
+    public void setUFRestaurante(String UFRestaurante) {
+        this.UFRestaurante = UFRestaurante;
     }
 
     public String getCepRestaurante() {
