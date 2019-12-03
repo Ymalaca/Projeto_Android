@@ -21,9 +21,9 @@ public class RestauranteDAO extends Conexao {
 
     public ContentValues ObterDados(Restaurante restaurante){
         ContentValues values = new ContentValues();
-        values.put("RUA",restaurante.getNomeRestaurante());
-        values.put("BAIRRO",restaurante.getTelefoneRestaurante());
-        values.put("CIDADE",restaurante.getCNPJRestaurante());
+        values.put("NOME",restaurante.getNomeRestaurante());
+        values.put("CNPJ",restaurante.getTelefoneRestaurante());
+        values.put("TELEFONE",restaurante.getCNPJRestaurante());
 
         return values;
     }
