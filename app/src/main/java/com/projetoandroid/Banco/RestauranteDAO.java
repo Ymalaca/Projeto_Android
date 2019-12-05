@@ -1,13 +1,12 @@
-package com.ifal.wendell.bookingnow.Banco;
+package com.projetoandroid.Banco;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteException;
 
-import com.ifal.wendell.bookingnow.Modelos.Endereco;
-import com.ifal.wendell.bookingnow.Modelos.Restaurante;
+import com.projetoandroid.Modelos.Endereco;
+import com.projetoandroid.Modelos.Restaurante;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class RestauranteDAO extends Conexao {
@@ -24,6 +23,7 @@ public class RestauranteDAO extends Conexao {
         values.put("NOME",restaurante.getNomeRestaurante());
         values.put("CNPJ",restaurante.getTelefoneRestaurante());
         values.put("TELEFONE",restaurante.getCNPJRestaurante());
+        values.put("CODIGO_DO_ENDERECO", restaurante.getEndereco().getCodigo());
 
         return values;
     }
@@ -48,7 +48,7 @@ public class RestauranteDAO extends Conexao {
     }
 
     public ArrayList<Restaurante> BuscarDadosRestaurante(){
-        ArrayList<Restaurante> restaurantes = null;
+        ArrayList<Restaurante> restaurantes = new ArrayList<>();
 
         try {
             Cursor c = getWritableDatabase().rawQuery("SELECT * FROM RESTAURANTE;",null);

@@ -1,6 +1,8 @@
-package com.ifal.wendell.bookingnow.Modelos;
+package com.projetoandroid.Modelos;
 
-public class Restaurante {
+import java.io.Serializable;
+
+public class Restaurante implements Serializable {
     private String NomeRestaurante;
     private int codigo;
     private int TelefoneRestaurante;

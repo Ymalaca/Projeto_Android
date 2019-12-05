@@ -1,4 +1,4 @@
-package com.ifal.wendell.bookingnow.Modelos;
+package com.projetoandroid.Modelos;
 
 public class Endereco {
      private String CepRestaurante;

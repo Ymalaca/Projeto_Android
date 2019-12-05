@@ -1,14 +1,11 @@
-package com.ifal.wendell.bookingnow.Banco;
+package com.projetoandroid.Banco;
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteException;
 
-import com.ifal.wendell.bookingnow.Modelos.Endereco;
-
-import java.lang.reflect.Array;
-import java.util.ArrayList;
+import com.projetoandroid.Modelos.Endereco;
 
 public class EnderecoDAO extends Conexao {
 

@@ -1,17 +1,9 @@
-package com.ifal.wendell.bookingnow.Banco;
+package com.projetoandroid.Banco;
 
 
-import android.content.ContentValues;
 import android.content.Context;
-import android.database.Cursor;
-import android.database.DatabaseErrorHandler;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.support.annotation.Nullable;
-
-import java.util.ArrayList;
-import java.util.List;
-
 
 
 public class Conexao extends SQLiteOpenHelper {

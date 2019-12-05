@@ -8,12 +8,17 @@
 
     <item
         android:id="@+id/ReservarRestaurante"
-        android:title="Editar Restaurante"
+        android:title="Reservar Restaurante"
         />
 
     <item
         android:id="@+id/VerReservas"
         android:title="Ver Reservas"
+        />
+
+    <item
+        android:id="@+id/VerLocalizacao"
+        android:title="Ver Localizacao"
         />
 
 

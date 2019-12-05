@@ -1,6 +1,8 @@
-package com.ifal.wendell.bookingnow.Modelos;
+package com.projetoandroid.Modelos;
 
-public class Reserva {
+import java.io.Serializable;
+
+public class Reserva implements Serializable {
     private int codigo;
     private String NomeReservante;
     private int TelefoneReservante;
