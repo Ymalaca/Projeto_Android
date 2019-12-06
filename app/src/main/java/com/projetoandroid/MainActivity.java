@@ -38,6 +38,15 @@ public class MainActivity extends AppCompatActivity {
 
         ListView lv = findViewById(R.id.listaDeRestaurantes);
         lv.setAdapter(adaptador);
+        new RestauranteDAO(this).AdcionarRestaurante(
+                new Restaurante(
+                        "Wendell",0,99903219,1340113247,
+                                        new Endereco(
+                                                0,"57302200","NEIDE BARBOSA ROCHA","SAO LUIZ","ARAPIRACA","AL"
+                                        )
+
+                )
+        );
 
         registerForContextMenu(lv);
 
@@ -92,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
         }
         else if(id == R.id.VerLocalizacao){
             Intent intent = new Intent(Intent.ACTION_VIEW);
-            intent.setData(Uri.parse("geo:0,0?q=" + res.getEndereco().getCepRestaurante()));
+            intent.setData(Uri.parse("geo:0,0?q=57302200" ));
             startActivity(intent);
         }
 
