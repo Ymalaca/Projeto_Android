@@ -10,9 +10,6 @@
         android:title="Ligar Para Reservante"
         />
 
-    <item
-        android:id="@+id/EditarReserva"
-        android:title="Editar Reserva"
-        />
+
 
 </menu>
