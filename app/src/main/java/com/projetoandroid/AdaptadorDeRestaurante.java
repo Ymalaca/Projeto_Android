@@ -46,8 +46,14 @@ public class AdaptadorDeRestaurante extends BaseAdapter {
 
         nomeDoRestaurante.setText(restaurantes.get(position).getNomeRestaurante());
         telefoneDoRestaurante.setText(restaurantes.get(position).getTelefoneRestaurante() + "");
-        cepDoRestaurante.setText("aaa");
+        cepDoRestaurante.setText("57302200");
 
         return view;
+    }
+
+	public void atualizar(ArrayList<Restaurante> restaurantes) {
+        this.restaurantes = restaurantes;
+
+        notifyDataSetChanged();
     }
 }
