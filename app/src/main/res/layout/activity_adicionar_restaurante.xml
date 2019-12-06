@@ -46,6 +46,18 @@
                 android:padding="10dp"
                 android:layout_marginTop="5dp"
                 android:layout_below="@+id/NomeRestaurante"
+                android:id="@+id/RestauranteCnpj"
+                android:layout_marginHorizontal="30dp"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:hint="CNPJ"
+                />
+
+            <EditText
+                android:background="@drawable/edit_text"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/RestauranteCnpj"
                 android:id="@+id/TelefoneRestaurante"
                 android:layout_marginHorizontal="30dp"
                 android:layout_width="350dp"
@@ -113,6 +125,7 @@
 
             <Button
                 android:background="@drawable/botao"
+                android:id="@+id/botaoCadas"
                 android:layout_below="@id/CidadeRestaurante"
                 android:layout_marginTop="30dp"
                 android:layout_marginHorizontal="130dp"

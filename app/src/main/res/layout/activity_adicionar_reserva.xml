@@ -60,6 +60,7 @@
         />
 
     <Button
+        android:id="@+id/botaoCadastrar"
         android:background="@drawable/botao"
         android:layout_below="@id/CpfReservante"
         android:layout_marginTop="30dp"
