@@ -4,6 +4,7 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteException;
+import android.util.Log;
 
 import com.projetoandroid.Modelos.Endereco;
 import com.projetoandroid.Modelos.Reserva;
@@ -31,8 +32,13 @@ public class ReservaDAO extends Conexao {
 
 
     public void AdcionarReserva(Reserva reserva){
-        ContentValues values = ObterDados(reserva);
-        getWritableDatabase().insert("RESERVA", null,values);   
+        try {
+            ContentValues values = ObterDados(reserva);
+            getWritableDatabase().insert("RESERVA", null,values);
+        }
+        catch(Exception e ) {
+            Log.i("Script", "Ero: " + e);
+        }
     }
 
     public void ExcluirReserva(int Codigo){
@@ -56,8 +62,6 @@ public class ReservaDAO extends Conexao {
             Cursor c = getWritableDatabase().rawQuery("SELECT * FROM RESERVA;",null);
 
             if(c.moveToNext()) {
-                Endereco endereco = new EnderecoDAO(this.context).buscarEnderecoPeloCodigo(c.getInt(c.getColumnIndex("CODIGO_DO_ENDERECO")));
-
                 reservas.add(new Reserva(
                         c.getString(c.getColumnIndex("NOME")),
                         c.getInt(c.getColumnIndex("TELEFONE")),
