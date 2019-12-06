@@ -10,7 +10,7 @@ public class Conexao extends SQLiteOpenHelper {
 
     //DEFINE O NOME E A VERSAO DO BD
     private static String name = "bookingnow";
-    private static int version = 1;
+    private static int version = 5;
 
     public Conexao(Context context) {
         super(context, name, null, version);
